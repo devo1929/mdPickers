@@ -163,8 +163,7 @@ module.directive("mdpClock", ["$animate", "$timeout", function($animate, $timeou
 
                     if(ctrl.autoSwitch &&
                         ["mouseup", "click"].indexOf(event.type) !== -1 &&
-                        timepickerCtrl &&
-                        timepickerCtrl.currentView === timepickerCtrl.VIEW_HOURS) {
+                        timepickerCtrl) {
 
                         timepickerCtrl.switchView();
                     }
